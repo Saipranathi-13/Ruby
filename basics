@@ -51,8 +51,22 @@ multi-line to print:
 Bang(!) operator mainly used in ruby: it will modify the original object.
 include: returns if the string is present in the object
 global substitute(gsub): it will find the characters which are in one letter and replace it with other(gsub('a', 'u').
-substitute(sub): same as global but differnece is only it replaces the first letter which is given('a','u')
+substitute(sub): same as global but difference is only it replaces the first letter which is given('a','u')
 abs(): absolute value. it should be positive
 round(): round off value(no decimal values)
 floor(): round down(576.2=576) 
 ceil(): round up(576.2=577)
+gets: takes the input and goes to next line.
+gets.chomp: takes input only
+
+
+
+
+
+
+
+
+
+
+
+
