@@ -1,5 +1,58 @@
-Ruby: Ruby is a scripting languageIt is a dynamic,open-source, object oriented and reflective programming language.
-1. It is fully object oriented programming language.
+Ruby: Ruby is a server side scripting language is a dynamic,open-source, object-oriented and reflective programming language.
+1. It is fully object-oriented programming language.
 2. Each and every code has their properities(variables) and actions(methods).
 3. Ruby is considered to follow the principle of POLA (principle of least astonishment). It means that the language behaves in such a way to minimize the confusion for experienced users.
-
+Ruby features:
+   1. Object-oriented: purely object-oriented
+   2. Flexibility: can easily remove, redefine or add 
+   3. Mixins: Ruby has a feature of single inheritance only. Ruby has classes as well as modules. A module has methods but no instances. Instead, a module can be mixed into a class, which adds the method of that module to the class. It is similar to inheritance but much more flexible.
+   4. Visual appearance: Ruby generally prefers English keywords and some punctuation is used to decorate Ruby. It doesn't need a variable declaration.
+   5. Dynamic typing and Duck typing: Ruby is a dynamic programming language. Ruby programs are not compiled. All class, module and method definition are built by the code when it run.
+   6. Variable constants: In Ruby, constants are not really constant. If an already initialized constant will be modified in a script, it will simply trigger a warning but will not halt your program.
+   7. Naming conventions: Ruby defines some naming conventions for its variable, method, constant and class.
+                          Constant: Starts with a capital letter.
+                          Global variable: Starts with a dollar sign ($).
+                          Instance variable: Starts with a (@) sign.
+                          Class variable: Starts with a (@@) sign.
+                          Method name: Allowed to start with a capital letter.
+   8. Keyword arguments: methods can also be defined using keyword arguments.
+   9. Method names: Methods are allowed to end with question mark (?) or exclamation mark (!). By convention, methods that answer questions end with question mark and methods that indicates that method can change the state of the object end with exclamation mark.
+   10. Singleton methods: Ruby singleton methods are per-object methods. They are only available on the object you defined it on.
+   11. Missing method: Ruby calls the method_missing method with name of the lost method.
+   12. Case Sensitive: Ruby is a case-sensitive language. Lowercase letters and uppercase letters are different.
+Ruby variables: Ruby variables are locations which hold data to be used in the programs. Each variable has a different name. These variable names are based on some naming conventions. Unlike other programming languages, there is no need to declare a variable in Ruby. A prefix is needed to indicate it.
+There are four types of variables in Ruby:
+   Local variables: name start with a lowercase letter or underscore. it is only accessible or have its scope within the block of its initialization.
+   Class variables: name starts with @@ sign. they need to be initialized before use. it belongs to the whole class and can be accessible from anywhere inside the class.
+   Instance variables: name starts with @ sign. it belongs to one instance of a class and can be accessed from any instance of the class within a method.
+   Global variables: name starts with $ sign. its scope is globally. it can be accessed from any where in a program
+Data types: string, number, Boolean, Nill, Arrays, Hashes, Symbol.
+interpolation: using variables with the strings(#(variable)).
+casting: data type conversion
+  to_i--- to_integer
+  to_s--- to_String
+  to_f-- to_Float
+  to_a-- to_array
+  to_r-- to_Rational
+  to_c-- to_Complex
+some methods in strings
+  upcase: upper case
+  downcase: lowercase
+  reverse
+  length
+multi-line to print:
+  1. using `"Hello
+              world"`
+  2. using %/hello/
+  3. using <<Sting 
+              hello
+              world
+              String
+Bang(!) operator mainly used in ruby: it will modify the original object.
+include: returns if the string is present in the object
+global substitute(gsub): it will find the characters which are in one letter and replace it with other(gsub('a', 'u').
+substitute(sub): same as global but differnece is only it replaces the first letter which is given('a','u')
+abs(): absolute value. it should be positive
+round(): round off value(no decimal values)
+floor(): round down(576.2=576) 
+ceil(): round up(576.2=577)
