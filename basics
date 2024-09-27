@@ -58,15 +58,87 @@ floor(): round down(576.2=576)
 ceil(): round up(576.2=577)
 gets: takes the input and goes to next line.
 gets.chomp: takes input only
+we can create arrays in 2 ways
+      1. via class=> array.new
+      2. literal array=>[10,9,8,7]
+dimensional array: g=[ [1,2,3], [2,3,4], [4,5,6] ]
+                         0 1 2   0 1 2    0 1 2
+                           0        1       2
+Methods in array: 
+         push: which inserts the contents
+         pop: which returns and deletes the last element
+         reverse: which reverse the array
+         sort: which will sort the array
+         include: check whether the item is in array or not
+size(): which gives the size of the array
+length(): which gives the length of the array 
+range:
+         array[1,2]: [start_index, no.of elements]
+         array[1..3]: [start_index, end index]include end index value
+         array[1...3]: [start_index, end_index]exclude last index value
+Conditions
+  if condition
+      statement
+  end
 
 
+ if condition
+     statement
+ elsif
+      statement
+ else
+      statement
+ end
 
 
+unless: opposite to if condition
+example      
+      city="New Delhi"
+      unless city="New Delhi" #if the statement is false
+         puts "not the capital of india" #this will work
+       else
+          puts "Capital of india"
+       end
+
+condition ? if true run this : if false run this (tenary operator)
+example
+      puts(5 == 6) ? "5 equals 6" : "5 not equals 6"
+      output: 5 not equals 6 
+Ruby modifiers:
+    eg: age = 15
+        puts "you are young" if age<=18 # you are young
+        age = 20
+        puts "you are young" if age<=18 # Program did not output anything!
+       age = 15 
+       puts "you are old" unless age<=18 # Program did not output anything!
+       age = 25
+       puts "you are old again" unless age<=18# you are old again
+      name= nil
+      name ||= "cat's cradle"
+      puts name # it checks whether the name store any item, if name not having any item then the cat's cradle will assign to the anme
+switch case
+age = 30 #output Job
+case age
+  when 0..18
+    puts "Study"
+  when 18..60
+    puts "Job"
+  when 60..100
+    puts "retry"
+  else
+   puts "Dead"
+end
 
 
-
-
-
+puts "Hello there!" 
+g=gets.chomp
+case g
+  when "English" then puts "Hello!"
+  when "French" then puts "Bonjour!"
+  when "German" then puts "Guten Tag!"
+  when "finnish" then puts "Hallo!"
+  else puts "I don't know that language!"
+end
 
 
 
